@@ -38,6 +38,7 @@ app.get('/api/main/:year/:month/:day', (req, resExpress) => {
   } = req.params;
 
   mh = mh.padStart(2, "0");
+  dy = dy.padStart(2, "0");
 
   getTrends(new Date(`${yr}-${mh}-${dy}`), resExpress);
 });
