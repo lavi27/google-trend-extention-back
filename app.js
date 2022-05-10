@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require("cors");
 const googleTrends = require('google-trends-api');
 
-const port = 3050;
+const port = process.env.PORT;
 let result;
 
 const app = express();
